@@ -13,6 +13,7 @@ public class Tester {
 
    @Test
    public void partA () {
+    OnlinePurchaseManager opm = new OnlinePurchaseManager();
     opm.add(new Gizmo("ABC",true));
     opm.add(new Gizmo("ABC",false));
     opm.add(new Gizmo("XYZ",true));
@@ -34,8 +35,9 @@ public class Tester {
 
    @Test
    public void partB(){
-         opm.add(new Gizmo("ABC",true));
-        opm.add(new Gizmo("ABC",false));
+       OnlinePurchaseManager opm = new OnlinePurchaseManager();
+       opm.add(new Gizmo("ABC",true));
+       opm.add(new Gizmo("ABC",false));
        opm.add(new Gizmo("XYZ",true));
        opm.add(new Gizmo("lmnop",false));
        opm.add(new Gizmo("ABC",true));
