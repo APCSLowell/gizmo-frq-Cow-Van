@@ -1,7 +1,6 @@
 
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -22,16 +21,16 @@ public class Tester {
     opm.add(new Gizmo("ABC",true));
     opm.add(new Gizmo("ABC",false));
     int abc = opm.countElectronicsByMaker("ABC");
-    assertTrue(partAFail(2,abc,"ABC"), 2 == abc);
+    assertTrue(2,abc,partAFail(2,abc,"ABC"));
       
     int lmnop = opm.countElectronicsByMaker("lmnop");
-    assertTrue(partAFail(0,lmnop,"lmnop"), 0 == lmnop);
+    assertTrue(0,lmnop,(partAFail(0,lmnop,"lmnop"));
 
     int xyz = opm.countElectronicsByMaker("XYZ");
-    assertTrue(partAFail(1,xyz,"XYZ"), 1 == xyz);
+    assertTrue(1,xyz,partAFail(1,xyz,"XYZ"));
 
    int qrp = opm.countElectronicsByMaker("QRP");
-    assertTrue(partAFail(0,qrp,"QRP"), 0 == qrp);
+    assertTrue(0,qrp,partAFail(0,qrp,"QRP"));
    }
 
    @Test
