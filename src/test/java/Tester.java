@@ -19,16 +19,16 @@ public class Tester {
     opm.add(new Gizmo("lmnop",false));
     opm.add(new Gizmo("ABC",true));
     opm.add(new Gizmo("ABC",false));
-    int abc = opm.countElectronicsByMaker("ABC")
+    int abc = opm.countElectronicsByMaker("ABC");
     assertEquals(partAFail(2,abc,"ABC"),2,abc);
       
     int lmnop = opm.countElectronicsByMaker("lmnop");
     assertEquals(partAFail(0,lmnop,"lmnop"),0,lmnop);
 
-    int xyz = opm.countElectronicsByMaker("XYZ")
+    int xyz = opm.countElectronicsByMaker("XYZ");
     assertEquals(partAFail(1,xyz,"XYZ"),1,xyz);
 
-   int qrp = opm.countElectronicsByMaker("QRP")
+   int qrp = opm.countElectronicsByMaker("QRP");
     assertEquals(partAFail(0,qrp,"QRP"),0,qrp);
    }
 
